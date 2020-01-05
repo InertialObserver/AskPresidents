@@ -1,0 +1,17 @@
+<AskPresidentsLayout>:
+    orientation: 'vertical'
+    Label:
+        text: "What would President Trump say?"
+        font_size: 50
+        text_size: self.size
+        halign: 'center'
+        valign: 'middle'
+    BoxLayout:
+        orientation: 'horizontal'
+        AnchorLayout:
+            TextInput:
+                size_hint: None, None
+                text: '%s, %s' % (self.get_center_x(), self.get_center_y())
+    Button:
+        text: 'Ask Now'
+         #   on_release: root.get_quote
