@@ -16,4 +16,12 @@
                 text: '%s, %s' % (self.get_center_x(), self.get_center_y())
     Button:
         text: 'Ask Now'
-         #   on_release: root.get_quote
+     #   on_release: root.get_quote
+        on_release: root.choice('I am the best at everything')
+    Label:
+        id: result
+        font_size: 40
+        text: ''
+    Button:
+        text: 'Start Over'
+        on_press: root.clear()
