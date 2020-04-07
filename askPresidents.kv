@@ -10,7 +10,9 @@
         orientation: 'horizontal'
         AnchorLayout:
             TextInput:
-                size_hint: None, None
+                size_hint: (.5, None)
+                height: 30
+                multiline: False
                 text: '%s, %s' % (self.get_center_x(), self.get_center_y())
     Button:
         text: 'Ask Now'
